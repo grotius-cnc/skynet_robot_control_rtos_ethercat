@@ -1,0 +1,64 @@
+
+loadrt threads name1=base-thread fp1=0 period1=15000 name2=servo-thread period2=1000000
+
+loadusr -W /usr/share/ethercat/linuxcnc_ethercat/src/lcec_conf robot/Ethercat/ethercat-conf.xml
+loadrt lcec
+
+net ec-slaves-responding <= lcec.slaves-responding
+net ec-link-up <= lcec.link-up
+net ec-all-op <= lcec.all-op
+
+addf lcec.read-all base-thread
+addf lcec.write-all base-thread
+
+# For example expand to : step_type=0,0,0,0,0,0 #for a 6 axis stepper robot.
+loadrt stepgen step_type=0,0
+addf stepgen.make-pulses base-thread
+
+addf stepgen.capture-position servo-thread
+addf stepgen.update-freq servo-thread
+
+
+# Robot stepgeneratos parameters.
+
+setp stepgen.0.position-scale 130
+setp stepgen.0.steplen 5
+setp stepgen.0.stepspace 5
+setp stepgen.0.dirhold 35000
+setp stepgen.0.dirsetup 35000
+setp stepgen.0.maxaccel 750
+setp stepgen.0.maxvel 500
+setp stepgen.0.enable 1
+
+setp stepgen.1.position-scale 130
+setp stepgen.1.steplen 5
+setp stepgen.1.stepspace 5
+setp stepgen.1.dirhold 35000
+setp stepgen.1.dirsetup 35000
+setp stepgen.1.maxaccel 750
+setp stepgen.1.maxvel 500
+setp stepgen.1.enable 1
+
+
+# Connecting robot joints J2 and J3.
+
+#EL2124 4x 5us pulse
+net J2_step => stepgen.0.step 	lcec.0.output_stepper_1.dout-0
+net J2_dir 	=> stepgen.0.dir 	lcec.0.output_stepper_1.dout-1
+net J3_step => stepgen.1.step 	lcec.0.output_stepper_1.dout-2
+net J3_dir  => stepgen.1.dir 	lcec.0.output_stepper_1.dout-3
+
+#EL2124 4x 5us pulse
+#net J4_step => stepgen.2.step 	lcec.0.output_stepper_2.dout-0
+#net J4_dir  => stepgen.2.dir 	lcec.0.output_stepper_2.dout-1
+#net J5_step => stepgen.3.step 	lcec.0.output_stepper_2.dout-2
+#net J5_dir  => stepgen.3.dir 	lcec.0.output_stepper_2.dout-3
+
+
+# Connecting gui float value "J2_POS_CMD" to stepgenerator
+
+net NETJ3 => J3_POS_CMD stepgen.0.position-cmd
+net NETJ4 => J4_POS_CMD stepgen.1.position-cmd
+
+#net bitdata bitpin lcec.0.output_stepper_2.dout-2
+

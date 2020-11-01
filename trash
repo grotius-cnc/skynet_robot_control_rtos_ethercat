@@ -1,0 +1,82 @@
+std::cout<<"degrees of rotation:"<<value<<std::endl;
+double radians=value * (M_PI/180);
+
+
+
+//        TopoDS_Solid firstSolid = TopoDS::Solid(mapOfShapes.FindKey(1));
+//        TopoDS_Solid secondSolid = TopoDS::Solid(mapOfShapes.FindKey(2));
+
+
+ //We are going to move the second solid along the z axis in the negative direction
+ //This needs a gp_Trsf object
+ //gp_Trsf translation;
+ //translation.SetTranslation(gp_Pnt(0.0,0.0,0.0),gp_Pnt(0.0,0.0,-800.0));
+
+
+ //Perform the translation
+ //BRepBuilderAPI_Transform translationTransformer(translation);
+ //translationTransformer.Perform(secondSolid,false);
+ //TopoDS_Solid solidAfterTranslation = TopoDS::Solid(translationTransformer.ModifiedShape(secondSolid));
+
+  TopoDS_Shape newshape = shape;
+  TopoDS_Solid newsolid = solid;
+
+ //Next we rotate the first solid around the y axis by 45 degrees
+ gp_Trsf rotation;
+ rotation.SetRotation(gp::OY(),radians * M_PI / 4.0);
+ BRepBuilderAPI_Transform rotationTransformer(rotation);
+ rotationTransformer.Perform(solid);
+ TopoDS_Solid solidAfterRotation = TopoDS::Solid(rotationTransformer.ModifiedShape(solid));
+
+ //Next, we replace the original shape in the compound by the new, rotated and transformed shape
+ //BRepTools_ReShape reShaper;
+ //reShaper.Replace(solid,solidAfterRotation);
+
+ //newshape = reShaper.Apply(newshape);
+
+ Handle(AIS_Shape) t_ais_box = new AIS_Shape(solidAfterRotation);
+ m_context->Display(t_ais_box,1);
+
+
+
+
+//works rotate plus orginal stays with it.
+
+Handle (AIS_InteractiveContext) ic = m_get_context();
+Handle(AIS_InteractiveObject) ais = new AIS_Shape(test);
+
+
+ic->Display( ais, true );  // last parameter forces to update a viewer;
+                           // when several shapes are displayed simultaneously, it is possible to pass false here
+                           // and call viewer->getViewer3d()->Update(); in the end
+
+
+
+/*
+//KDL kinematics library, kinematics.h test code :
+FWKIN_DEG IN,OUT;
+
+IN.J1=deg_joint1;
+IN.J2=deg_joint2;
+IN.J3=deg_joint3;
+IN.J4=deg_joint4;
+IN.J5=deg_joint5;
+IN.J6=deg_joint6;
+
+IN.Xtrans=0;
+IN.Ytrans=0;
+IN.Ztrans=0;
+
+OUT = kinematics().kinematics_inv(IN);
+
+std::cout<<"J1:"<<OUT.J1<<std::endl;
+std::cout<<"J2:"<<OUT.J2<<std::endl;
+std::cout<<"J3:"<<OUT.J3<<std::endl;
+std::cout<<"J4:"<<OUT.J4<<std::endl;
+std::cout<<"J5:"<<OUT.J5<<std::endl;
+std::cout<<"J6:"<<OUT.J6<<std::endl;
+
+std::cout<<"Xee:"<<OUT.Xee<<std::endl;
+std::cout<<"Yee:"<<OUT.Yee<<std::endl;
+std::cout<<"Zee:"<<OUT.Zee<<std::endl;
+*/
