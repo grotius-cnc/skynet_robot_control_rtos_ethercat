@@ -1,4 +1,4 @@
-Look at the end of the .pro file how to install. There are a few dependencies to install by terminal.
+# Look at the end of the .pro file how to install. There are a few dependencies to install by terminal.
 
 I published a quite minimal program to keep it simple for starting C++ programmers.
 
