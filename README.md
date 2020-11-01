@@ -4,7 +4,8 @@ I published a quite minimal program to keep it simple for starting C++ programme
 
 This software is designed to be running in a RealTime environment.
 
-The software is configured to control a robot over Ethercat and preview the robot position in the cad "opencascade" screen.
+The software is configured to control a robot over Ethercat and preview the robot position in the cad "opencascade" screen
+with increadable fast responce time's like the Unreal Game Engine !
 
 The operating system i use is Debian Ethercat RTos 64 bit. 
 https://github.com/grotius-cnc/LINUX_RTOS
