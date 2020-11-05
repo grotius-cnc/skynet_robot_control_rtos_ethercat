@@ -1,5 +1,7 @@
 # Look at the end of the .pro file how to install. There are a few dependencies to install by terminal.
 
+Don't clone this code. Download the latest release code. This is a zip file containing the latest QT C++ code.
+
 I published a quite minimal program to keep it simple for starting C++ programmers.
 
 This software is designed to be running in a RealTime environment.
@@ -22,6 +24,13 @@ https://github.com/grotius-cnc/orocos_kinematics_dynamics
 
 
 ![skynet_robot_controller_hal_working](https://user-images.githubusercontent.com/44880102/97806781-59299180-1c2b-11eb-8744-dd5f13f865a4.png)
+
+//Project update picture :
+
+![skynet_robot_controller_hal_working](https://user-images.githubusercontent.com/44880102/98267891-e2a5d000-1f59-11eb-9ab1-f62b04f265d0.png)
+
+
+
 
 Have fun.
 
