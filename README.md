@@ -29,6 +29,9 @@ https://github.com/grotius-cnc/orocos_kinematics_dynamics
 
 ![skynet_robot_controller_hal_working](https://user-images.githubusercontent.com/44880102/98267891-e2a5d000-1f59-11eb-9ab1-f62b04f265d0.png)
 
+//Now importing correct stepfile colors :
+
+![skynet_robot_controller_hal_working](https://user-images.githubusercontent.com/44880102/98439021-a0e16a80-20bc-11eb-8f2c-a2b9bb4cb91d.png)
 
 
 
