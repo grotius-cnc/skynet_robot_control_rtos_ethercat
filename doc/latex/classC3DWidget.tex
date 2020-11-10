@@ -1,0 +1,202 @@
+\hypertarget{classC3DWidget}{}\doxysection{C3\+DWidget Class Reference}
+\label{classC3DWidget}\index{C3DWidget@{C3DWidget}}
+Inheritance diagram for C3\+DWidget\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classC3DWidget}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classC3DWidget_acce3e827242f08a98259a9a3f373b5f8}\label{classC3DWidget_acce3e827242f08a98259a9a3f373b5f8}} 
+{\bfseries C3\+DWidget} (QWidget $\ast$parent=nullptr)
+\item 
+\mbox{\Hypertarget{classC3DWidget_ac9142e4ab52bf5b563b0748a0bda8934}\label{classC3DWidget_ac9142e4ab52bf5b563b0748a0bda8934}} 
+void {\bfseries button\+\_\+rotate} (bool value)
+\item 
+\mbox{\Hypertarget{classC3DWidget_a260cf4ccb4d5867b728697a6c0135704}\label{classC3DWidget_a260cf4ccb4d5867b728697a6c0135704}} 
+void {\bfseries erase\+\_\+all} ()
+\item 
+\mbox{\Hypertarget{classC3DWidget_a2a2146369ede3c65ca982e8795285c45}\label{classC3DWidget_a2a2146369ede3c65ca982e8795285c45}} 
+void {\bfseries erase\+\_\+selected} ()
+\item 
+\mbox{\Hypertarget{classC3DWidget_a2352e84f28beeffa482f66ab2591ab6d}\label{classC3DWidget_a2352e84f28beeffa482f66ab2591ab6d}} 
+void {\bfseries rotate\+\_\+line} ()
+\item 
+\mbox{\Hypertarget{classC3DWidget_ad05066fc170a657da67c76b63f9c708a}\label{classC3DWidget_ad05066fc170a657da67c76b63f9c708a}} 
+void {\bfseries translate\+\_\+line} ()
+\item 
+\mbox{\Hypertarget{classC3DWidget_ad080075bcbba5a51dac45e0e32d03a62}\label{classC3DWidget_ad080075bcbba5a51dac45e0e32d03a62}} 
+void {\bfseries draw\+\_\+line} (gp\+\_\+\+Pnt point1, gp\+\_\+\+Pnt point2)
+\item 
+\mbox{\Hypertarget{classC3DWidget_a8a05f49d5546933e91d03e51ab95d332}\label{classC3DWidget_a8a05f49d5546933e91d03e51ab95d332}} 
+void {\bfseries draw\+\_\+3p\+\_\+arc} (gp\+\_\+\+Pnt point1, gp\+\_\+\+Pnt point2, gp\+\_\+\+Pnt point3)
+\item 
+\mbox{\Hypertarget{classC3DWidget_adcd8bdd65060d6a69608666adc64d9ca}\label{classC3DWidget_adcd8bdd65060d6a69608666adc64d9ca}} 
+void {\bfseries draw\+\_\+circle} (gp\+\_\+\+Pnt center, double radius)
+\item 
+\mbox{\Hypertarget{classC3DWidget_a43bf73572a2724b45a3417d39f8603ad}\label{classC3DWidget_a43bf73572a2724b45a3417d39f8603ad}} 
+void {\bfseries draw\+\_\+cp\+\_\+arc} (gp\+\_\+\+Pnt center, gp\+\_\+\+Pnt point1, gp\+\_\+\+Pnt point2)
+\item 
+\mbox{\Hypertarget{classC3DWidget_ac9450464dcdd8caeca8e4d95bdc0750e}\label{classC3DWidget_ac9450464dcdd8caeca8e4d95bdc0750e}} 
+void {\bfseries zoom\+\_\+extends} ()
+\item 
+\mbox{\Hypertarget{classC3DWidget_ab66d86004aa2eaa454299ff78663ada0}\label{classC3DWidget_ab66d86004aa2eaa454299ff78663ada0}} 
+void {\bfseries convert\+\_\+parsed\+\_\+gcode} (std\+::vector$<$ \mbox{\hyperlink{structgcode}{gcode}} $>$ data)
+\item 
+\mbox{\Hypertarget{classC3DWidget_a165339af4f7475e0f9d8cc4113561ea4}\label{classC3DWidget_a165339af4f7475e0f9d8cc4113561ea4}} 
+void {\bfseries readstepfile} (const std\+::string \&the\+Step\+Name, int i)
+\item 
+void \mbox{\hyperlink{classC3DWidget_a885ca64ef53a70f43f0a307b3af0694b}{update\+\_\+joint\+\_\+slider}} (int project, int joint, int degrees)
+\item 
+\mbox{\Hypertarget{classC3DWidget_a6cc758d4e5048a8f45e7dce097234862}\label{classC3DWidget_a6cc758d4e5048a8f45e7dce097234862}} 
+void {\bfseries get\+\_\+various\+\_\+positions} ()
+\item 
+\mbox{\Hypertarget{classC3DWidget_ab51dbfd0549f84cfd6f2d60eb08b276f}\label{classC3DWidget_ab51dbfd0549f84cfd6f2d60eb08b276f}} 
+void {\bfseries set\+\_\+orthographic} ()
+\item 
+\mbox{\Hypertarget{classC3DWidget_a84067dd2f7e3a615c168899520385fca}\label{classC3DWidget_a84067dd2f7e3a615c168899520385fca}} 
+void {\bfseries set\+\_\+perspective} ()
+\item 
+void \mbox{\hyperlink{classC3DWidget_a01af4c68a7e1ddc25a2e1988380e8209}{visit}} (const TDF\+\_\+\+Label \&the\+Label, int i)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classC3DWidget_ab6851b0442c30ede793cdfe6085624ae}\label{classC3DWidget_ab6851b0442c30ede793cdfe6085624ae}} 
+enum {\bfseries Current\+Action3d} \{ {\bfseries Cur\+Action3d\+\_\+\+Nothing}, 
+{\bfseries Cur\+Action3d\+\_\+\+Dynamic\+Panning}, 
+{\bfseries Cur\+Action3d\+\_\+\+Dynamic\+Zooming}, 
+{\bfseries Cur\+Action3d\+\_\+\+Dynamic\+Rotation}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classC3DWidget_ae4932b0e44d3ad34e49f7722a297f8bc}\label{classC3DWidget_ae4932b0e44d3ad34e49f7722a297f8bc}} 
+void {\bfseries paint\+Event} (QPaint\+Event $\ast$)
+\item 
+\mbox{\Hypertarget{classC3DWidget_a16578e1542a1bad0c698b29bc9589e82}\label{classC3DWidget_a16578e1542a1bad0c698b29bc9589e82}} 
+void {\bfseries resize\+Event} (QResize\+Event $\ast$)
+\item 
+\mbox{\Hypertarget{classC3DWidget_aa0a6a543375d6630a6f57ff174b95ab3}\label{classC3DWidget_aa0a6a543375d6630a6f57ff174b95ab3}} 
+void {\bfseries mouse\+Press\+Event} (QMouse\+Event $\ast$event)
+\item 
+\mbox{\Hypertarget{classC3DWidget_a4b8dee2f1d2e273fe839ffe9d3c7c669}\label{classC3DWidget_a4b8dee2f1d2e273fe839ffe9d3c7c669}} 
+void {\bfseries mouse\+Release\+Event} (QMouse\+Event $\ast$event)
+\item 
+\mbox{\Hypertarget{classC3DWidget_a6ad10a0709259cf2d78f0ddad0fb8d1d}\label{classC3DWidget_a6ad10a0709259cf2d78f0ddad0fb8d1d}} 
+void {\bfseries mouse\+Move\+Event} (QMouse\+Event $\ast$event)
+\item 
+\mbox{\Hypertarget{classC3DWidget_a4692f21f1f4e16f9a42cbf37da1f63b6}\label{classC3DWidget_a4692f21f1f4e16f9a42cbf37da1f63b6}} 
+void {\bfseries wheel\+Event} (QWheel\+Event $\ast$event)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classC3DWidget_a885ca64ef53a70f43f0a307b3af0694b}\label{classC3DWidget_a885ca64ef53a70f43f0a307b3af0694b}} 
+\index{C3DWidget@{C3DWidget}!update\_joint\_slider@{update\_joint\_slider}}
+\index{update\_joint\_slider@{update\_joint\_slider}!C3DWidget@{C3DWidget}}
+\doxysubsubsection{\texorpdfstring{update\_joint\_slider()}{update\_joint\_slider()}}
+{\footnotesize\ttfamily void C3\+DWidget\+::update\+\_\+joint\+\_\+slider (\begin{DoxyParamCaption}\item[{int}]{project,  }\item[{int}]{joint,  }\item[{int}]{degrees }\end{DoxyParamCaption})}
+
+A joint can be readed as a chain. All code example\textquotesingle{}s are compatible with the Kuka robot project template.
+
+Example to rotate a AIS\+\_\+\+Shape, this is related to the stepfile objects viewed by the Open\+Cascade screen \+:
+
+
+\begin{DoxyEnumerate}
+\item Set up a transformation matrix. \begin{DoxyVerb} gp_Trsf MyTrsf;
+\end{DoxyVerb}
+
+\item Perform transformation. The value\textquotesingle{}s are in line with the machine kinematic setup. \begin{DoxyVerb}    MyTrsf.SetRotation(gp_Ax1(gp_Pnt( x pos, (rotate center point)
+                                      y pos,
+                                      z pos), gp_Dir( x flag, (x flag = 0 or 1, rotate around x axis ?)
+                                                      y flag,
+                                                      z flag)),rotation_value_in_degrees * M_PI /180);
+\end{DoxyVerb}
+
+\item Apply the transformation to a AIS\+\_\+\+Shape. Project\+Vec.\+at(0).Chain\+Vec.\+at(0).Ais\+\_\+\+Shape\+Vec.\+at(0)-\/$>$Set\+Local\+Transformation(\+My\+Trsf);
+\item Testcase\+: gp\+\_\+\+Trsf test; test.\+Set\+Rotation(gp\+\_\+\+Ax1(gp\+\_\+\+Pnt(0,0,0),gp\+\_\+\+Dir(0,0,1)),degrees $\ast$ M\+\_\+\+PI /180);
+\end{DoxyEnumerate}
+
+We take the transformation matrix from the Project\+Vec\mbox{[}i\mbox{]} struct.
+
+Project\+Vec\mbox{[}i\mbox{]} -\/$>$ Chain\+Vec\mbox{[}i\mbox{]} -\/$>$ My\+Trsf=\{\};
+
+From the Project\+Vec we hold the data in \+:
+\begin{DoxyItemize}
+\item POINT Frame\+Vector\+Point =\{0.\+0,0.\+0,0.\+0\};
+\item bool RotationflagX=0;
+\item bool RotationflagY=0;
+\item bool RotationflagZ=0;
+\end{DoxyItemize}
+
+Set local tranformation.
+
+Apply local transformation to all Ais\+\_\+\+Shape\+Vec\textquotesingle{}s, a stepfile can contain multiple shapes. We have to apply the transformation to all shapes we want to rotate.
+
+Testcase\+: for(unsigned int i=0; i$<$ Project\+Vec.\+at(project).Chain\+Vec.\+at(joint).Ais\+\_\+\+Shape\+Vec.\+size(); i++)\{ Project\+Vec.\+at(project).Chain\+Vec.\+at(joint).Ais\+\_\+\+Shape\+Vec.\+at(i)-\/$>$Set\+Local\+Transformation(Project\+Vec.\+at(project).Chain\+Vec.\+at(joint).My\+Trsf); \}
+
+Set local tranformation.
+
+Set local tranformation.
+
+Set local tranformation.
+
+Set local tranformation.
+
+Set local tranformation.
+
+Set local tranformation.
+
+Example Apply transformation for one shape \begin{DoxyVerb}for(unsigned int i=0; i< ProjectVec.at(project).ChainVec.at(joint).Ais_ShapeVec.size(); i++){
+    ProjectVec.at(project).ChainVec.at(joint).Ais_ShapeVec.at(i)->SetLocalTransformation(ProjectVec.at(project).ChainVec.at(joint).MyTrsf);
+}
+\end{DoxyVerb}
+
+
+Example Apply transformation to all unique shapes \begin{DoxyVerb}for(unsigned int i=0; i<ProjectVec.size(); i++){
+    for(unsigned int j=0; j<ProjectVec.at(i).ChainVec.size(); j++){
+        for(unsigned int k=0; k<ProjectVec.at(i).ChainVec.at(j).Ais_ShapeVec.size(); k++){
+
+            ProjectVec.at(i).ChainVec.at(j).Ais_ShapeVec.at(k)->SetLocalTransformation(ProjectVec.at(i).ChainVec.at(j).MyTrsf);
+        }
+    }
+}
+\end{DoxyVerb}
+
+
+Example Multiply each transformation gp\+\_\+\+Trsf level0=Project\+Vec.\+at(0).Chain\+Vec.\+at(0).My\+Trsf; gp\+\_\+\+Trsf level1=Project\+Vec.\+at(0).Chain\+Vec.\+at(1).My\+Trsf; gp\+\_\+\+Trsf level2=Project\+Vec.\+at(0).Chain\+Vec.\+at(2).My\+Trsf; gp\+\_\+\+Trsf level3=Project\+Vec.\+at(0).Chain\+Vec.\+at(3).My\+Trsf; gp\+\_\+\+Trsf level4=Project\+Vec.\+at(0).Chain\+Vec.\+at(4).My\+Trsf; gp\+\_\+\+Trsf level5=Project\+Vec.\+at(0).Chain\+Vec.\+at(5).My\+Trsf; gp\+\_\+\+Trsf level6=Project\+Vec.\+at(0).Chain\+Vec.\+at(6).My\+Trsf; \begin{DoxyVerb}    level0=level0;
+\end{DoxyVerb}
+ gp\+\_\+\+Trsf level0x1=level0$\ast$level1; gp\+\_\+\+Trsf level0x1x2 = level0x1$\ast$level2; gp\+\_\+\+Trsf level0x1x2x3 = level0x1x2$\ast$level3; gp\+\_\+\+Trsf level0x1x2x3x4 = level0x1x2x3$\ast$level4; gp\+\_\+\+Trsf level0x1x2x3x4x5 = level0x1x2x3x4$\ast$level5; gp\+\_\+\+Trsf level0x1x2x3x4x5x6 = level0x1x2x3x4x5$\ast$level6;
+
+Apply multipied transformation. Project\+Vec.\+at(0).Chain\+Vec.\+at(0).Ais\+\_\+\+Shape\+Vec.\+at(0)-\/$>$Set\+Local\+Transformation(level0); Project\+Vec.\+at(0).Chain\+Vec.\+at(1).Ais\+\_\+\+Shape\+Vec.\+at(0)-\/$>$Set\+Local\+Transformation(level0x1); Project\+Vec.\+at(0).Chain\+Vec.\+at(2).Ais\+\_\+\+Shape\+Vec.\+at(0)-\/$>$Set\+Local\+Transformation(level0x1x2); Project\+Vec.\+at(0).Chain\+Vec.\+at(3).Ais\+\_\+\+Shape\+Vec.\+at(0)-\/$>$Set\+Local\+Transformation(level0x1x2x3); Project\+Vec.\+at(0).Chain\+Vec.\+at(4).Ais\+\_\+\+Shape\+Vec.\+at(0)-\/$>$Set\+Local\+Transformation(level0x1x2x3x4); Project\+Vec.\+at(0).Chain\+Vec.\+at(5).Ais\+\_\+\+Shape\+Vec.\+at(0)-\/$>$Set\+Local\+Transformation(level0x1x2x3x4x5); Project\+Vec.\+at(0).Chain\+Vec.\+at(6).Ais\+\_\+\+Shape\+Vec.\+at(0)-\/$>$Set\+Local\+Transformation(level0x1x2x3x4x5x6);
+
+Automate the above code example Create transform matrixes.
+
+Create multiplied transform matrixes.
+
+Multiply matrixes. We start at position 1, the first matrix value we keep orginal.
+
+Apply the multiplied transformation to the project shapes. Without detailed step by step example\textquotesingle{}s above it\textquotesingle{}s very hard to come with this dynamic compact code.\mbox{\Hypertarget{classC3DWidget_a01af4c68a7e1ddc25a2e1988380e8209}\label{classC3DWidget_a01af4c68a7e1ddc25a2e1988380e8209}} 
+\index{C3DWidget@{C3DWidget}!visit@{visit}}
+\index{visit@{visit}!C3DWidget@{C3DWidget}}
+\doxysubsubsection{\texorpdfstring{visit()}{visit()}}
+{\footnotesize\ttfamily void C3\+DWidget\+::visit (\begin{DoxyParamCaption}\item[{const TDF\+\_\+\+Label \&}]{the\+Label,  }\item[{int}]{i }\end{DoxyParamCaption})}
+
+Example how to load a shape to the screen \+: Handle(\+AIS\+\_\+\+Shape) ais\+\_\+\+Shape = new AIS\+\_\+\+Shape(a\+Shape); ais\+\_\+\+Shape-\/$>$Set\+Color(col); ais\+\_\+\+Shape-\/$>$Set\+Display\+Mode(\+AIS\+\_\+\+Shaded); ais\+\_\+\+Shape-\/$>$Attributes()-\/$>$Set\+Face\+Boundary\+Draw(true); ais\+\_\+\+Shape-\/$>$Attributes()-\/$>$Set\+Face\+Boundary\+Aspect( new Prs3d\+\_\+\+Line\+Aspect(Quantity\+\_\+\+NOC\+\_\+\+BLACK, Aspect\+\_\+\+TOL\+\_\+\+SOLID, 1.)); ais\+\_\+\+Shape-\/$>$Attributes()-\/$>$Set\+Iso\+On\+Triangulation(true);
+
+Convert Topo\+DS\+\_\+\+Shape to AIS\+\_\+\+Shape and copy it to the project vector. Set the viewstyle to shade with wireframe.
+
+Preview the AIS\+\_\+\+Shape to the screen with m\+\_\+context.
+
+Repeat the visit function for each childmember.
+
+Zoom extends
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+c3dwidget.\+h\item 
+c3dwidget.\+cpp\end{DoxyCompactItemize}
