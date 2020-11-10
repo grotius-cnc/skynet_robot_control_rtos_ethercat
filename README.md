@@ -1,38 +1,7 @@
-# Look at the end of the .pro file how to install. There are a few dependencies to install by terminal.
-
-Don't clone this code. Download the latest release code. This is a zip file containing the latest QT C++ code.
-
-I published a quite minimal program to keep it simple for starting C++ programmers.
-
-This software is designed to be running in a RealTime environment.
-
-The software is configured to control a robot over Ethercat and preview the robot position in the cad "opencascade" screen
-with increadable fast responce time's like the Unreal Game Engine !
-
-The operating system i use is Debian Ethercat RTos 64 bit. 
-https://github.com/grotius-cnc/LINUX_RTOS
-
-This OS "operating system" uses the HAL "hardware abstract layer" to perform the RT "realtime" operations and connect i-o very easy.
-
-This program is developped with the QT C++ open source edition.
-
-To run or modify this example, you have to download and install the OpenCascade library, 
-https://github.com/grotius-cnc/oce
-
-Also you have to install the KDL kinematics library. 
-https://github.com/grotius-cnc/orocos_kinematics_dynamics
+Download the latest release code. 
 
 
-![skynet_robot_controller_hal_working](https://user-images.githubusercontent.com/44880102/97806781-59299180-1c2b-11eb-8744-dd5f13f865a4.png)
-
-//Project update picture :
-
-![skynet_robot_controller_hal_working](https://user-images.githubusercontent.com/44880102/98267891-e2a5d000-1f59-11eb-9ab1-f62b04f265d0.png)
-
-//Now importing correct stepfile colors :
-
-![skynet_robot_controller_hal_working](https://user-images.githubusercontent.com/44880102/98439021-a0e16a80-20bc-11eb-8f2c-a2b9bb4cb91d.png)
-
+![skynet_robot_controller_hal_working](https://user-images.githubusercontent.com/44880102/98651777-aaf7a900-2308-11eb-948c-1f5c3b445564.png)
 
 
 Have fun.
