@@ -11,7 +11,11 @@ It doens't matter. Thanks to the KDL coronos inverse kinematics and the OpenCasc
 
 The robot's are specified in the xml config file.
 Each project needs a xml config file. Inside the config file, the machine stepfiles are pointed out. Also the kinematic model is defined in the xml file in
-a simple way ! Documents and drawings are included.
+a simple way ! No dh parameters needed !
+
+Documents and drawings are included.
+
+This code can be used as a OpenCascade infocenter.
 
 Have fun.
 
