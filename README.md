@@ -13,5 +13,10 @@ This software uses:
 - Hal (hardware abstract layer)
 - Ethercat 
 
-A quickstart:
+A linux-pro quickstart:
 [![Download Linux 11 Professional ](https://a.fsdn.com/con/app/sf-download-button)](https://sourceforge.net/projects/linux-11-pro/files/latest/download)
+[![Download Linux 11 Professional ](https://img.shields.io/sourceforge/dt/linux-11-pro.svg)](https://sourceforge.net/projects/linux-11-pro/files/latest/download)
+
+A linux-bullseye quickstart:
+[![Download Linux Debian 11 Bullseye Rtos  ](https://a.fsdn.com/con/app/sf-download-button)](https://sourceforge.net/projects/linux-debian-bullseye-11-rtos/files/latest/download)
+[![Download Linux Debian 11 Bullseye Rtos  ](https://img.shields.io/sourceforge/dt/linux-debian-bullseye-11-rtos.svg)](https://sourceforge.net/projects/linux-debian-bullseye-11-rtos/files/latest/download)
