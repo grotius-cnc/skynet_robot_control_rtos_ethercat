@@ -1,7 +1,0 @@
-<masters>
-<master idx="0" appTimePeriod="15000" refClockSyncCycles="1000">
-<slave idx="0" type="EK1100" name="Terminal"/>
-<slave idx="1" type="EL2124" name="output_stepper_1"/>
-<slave idx="2" type="EL2124" name="output_stepper_2"/>
-</master>
-</masters>
