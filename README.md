@@ -19,4 +19,7 @@ A linux-bullseye quickstart:
 [![Download Linux Debian 11 Bullseye Rtos  ](https://img.shields.io/sourceforge/dt/linux-debian-bullseye-11-rtos.svg)](https://sourceforge.net/projects/linux-debian-bullseye-11-rtos/files/latest/download)
 
 Not oploaded yet, follow the arc's
-https://user-images.githubusercontent.com/44880102/122228898-4c8a3e80-ce86-11eb-87fb-6017dcfb0cb1.mp4
+
+https://user-images.githubusercontent.com/44880102/122229068-6e83c100-ce86-11eb-9814-1199550dd265.mp4
+
+
