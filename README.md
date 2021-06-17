@@ -1,7 +1,7 @@
 https://user-images.githubusercontent.com/44880102/122046313-c0f0af00-cdac-11eb-92a3-1def8517ed62.mp4
 
 Download the latest source code => ZIPFILE
-See Tags.
+See Tags. https://github.com/grotius-cnc/Skynet_Robot_Control_Rtos_Ethercat/releases/tag/1.0.23
 
 Open in Qt-creator : Skynet_Project.pro (edit the include path's to your needs).
 +1 : When compiling the program, all files are copied to the build directory. 
@@ -56,6 +56,7 @@ Possible implemenations:
 To be reviewed:
 1. When the scurve has a initial(vo) or end(ve) motion value, the displacement graph's show a "kink". This "kink" is absorbed by the stepgen backend componenent.
 
+If you have any problems loading the program:
 A linux-pro quickstart:
 
 [![Download Linux 11 Professional ](https://a.fsdn.com/con/app/sf-download-button)](https://sourceforge.net/projects/linux-11-pro/files/latest/download)
