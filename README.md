@@ -1,13 +1,13 @@
-
-
-
-
 https://user-images.githubusercontent.com/44880102/122046313-c0f0af00-cdac-11eb-92a3-1def8517ed62.mp4
 
-Download the latest release code => ZIPFILE
+Download the latest source code => ZIPFILE
 See Tags.
 
-Open in Qt-creator : Skynet_Project.pro
+Open in Qt-creator : Skynet_Project.pro (edit the include path's to your needs).
++1 : When compiling the program, all files are copied to the build directory. 
+
+The machine control interface is quite complete. It can move in xyz, joints, euler, tooldirection etc.
+The opencascade cad primitive function's are all inplemented 3d : points, lines, arc's, circle, wire, spline, etc. 
 
 Libraries:
 - Qt
@@ -50,6 +50,10 @@ Possible implemenations:
 4. Research and universety applications
 5. Boston robotics realistic movements trough realtime record options.
 6. Advanched military positioning systems.
+7. Use the code as infocenter for opencascade- kinematic- realtime program implementations.
+
+To be reviewed:
+1. When the scurve has a initial(vo) or end(ve) motion value, the displacement graph's show a "kink". This "kink" is absorbed by the stepgen backend componenent.
 
 A linux-pro quickstart:
 
