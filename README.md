@@ -7,6 +7,49 @@ https://user-images.githubusercontent.com/44880102/122046313-c0f0af00-cdac-11eb-
 Download the latest release code => ZIPFILE
 See Tags.
 
+Open in Qt-creator : Skynet_Project.pro
+
+Libraries:
+- Qt
+External :
+- Opencascade cad (machine visualisation)
+- Kdl orocos kinematics (machine kinematic model)
+- Linuxcnc, Hal (hardware abstract layer)
+- Ethercat-hg master (ethercat bus)
+- Linuxcnc-ethercat (beckhoff ethercat driver family Ek-El)
+Internal :
+- 3d Spline (3d spline algoritme)
+- Dxfrw (read and write dxf files)
+- Cavaliercontours (2d contour offset algoritme)
+- Scurve motion (scurve motion planner)
+
+My realtime filosofy when the sum of program calculations, kinematic calculations take longer then 1ms :
+
+The hal (hardware abstract layer) is reading the commanded machine position's every 1ms. This 1ms thread is called the servo-thread.
+In the kernel we use a realtime component called "streamer" This streamer read's the program position files and perform's a position every 1ms.
+In this way the machine execution has a realtime performance.
+
+The code in a nutshell :
+1. Load the machine stepfiles.
+2. Setup the kinematic model.
+3. Teach-in, add primitives like lines or arc's to the bucketvec data.
+4. Create a program from the bucketvec data. Create points for every 1ms and store them in multiple textfiles.
+5. Play the program. (Consider this as watching a netflix movie).
+
+Todo :
+1. Motion reverse.
+2. Store teach-in primitive data with the streamer files in a project. Then user can view a previous teach-in project.
+3. When kinematic moves are outside the scope, add a solver sequence.
+4. Test realtime streaming over the internet.
+5. Realtime record option for ultra realistic moves.
+
+Possible implemenations:
+1. Robotic Surgery Systems, including realtime streaming over the internet.
+2. Machine control system.
+3. Machine retrofit.
+4. Research and universety applications
+5. Boston robotics realistic movements trough realtime record options.
+6. Advanched military positioning systems.
 
 A linux-pro quickstart:
 
