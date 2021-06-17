@@ -1,22 +1,26 @@
 https://user-images.githubusercontent.com/44880102/122046313-c0f0af00-cdac-11eb-92a3-1def8517ed62.mp4
 
 Download the latest source code => ZIPFILE
+
 See Tags. https://github.com/grotius-cnc/Skynet_Robot_Control_Rtos_Ethercat/releases/tag/1.0.23
 
 Open in Qt-creator : Skynet_Project.pro (edit the include path's to your needs).
+
 +1 : When compiling the program, all files are copied to the build directory. 
 
 The machine control interface is quite complete. It can move in xyz, joints, euler, tooldirection etc.
+
 The opencascade cad primitive function's are all inplemented 3d : points, lines, arc's, circle, wire, spline, etc. 
 
 Libraries:
-- Qt
+
 External :
 - Opencascade cad (machine visualisation)
 - Kdl orocos kinematics (machine kinematic model)
 - Linuxcnc, Hal (hardware abstract layer)
 - Ethercat-hg master (ethercat bus)
 - Linuxcnc-ethercat (beckhoff ethercat driver family Ek-El)
+
 Internal :
 - 3d Spline (3d spline algoritme)
 - Dxfrw (read and write dxf files)
