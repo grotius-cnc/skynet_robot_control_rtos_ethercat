@@ -27,7 +27,8 @@ My realtime filosofy when the sum of program calculations, kinematic calculation
 
 The hal (hardware abstract layer) is reading the commanded machine position's every 1ms. This 1ms thread is called the servo-thread.
 In the kernel we use a realtime component called "streamer" This streamer read's the program position files and perform's a position every 1ms.
-In this way the machine execution has a realtime performance.
+The program path is calculated and written to multiple textfiles before execution by the streamer input.
+In this way the machine execution has a realtime performance. Through the tiny memory load during execution, program's can carry a huge complexity load.
 
 The code in a nutshell :
 1. Load the machine stepfiles.
