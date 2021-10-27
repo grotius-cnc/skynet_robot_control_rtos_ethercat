@@ -1,3 +1,22 @@
+Edit 27-10-2021.
+
+Good evening:
+
+After coding this repository, a little later, I found out how to make a program that can do all calculations realtime trough a kernel module.
+The basics for this coding technique can be done by using Hal-Core, see my other github repository /hal-core.
+Hal-core is able to use c++ helper library's like "kdl kinematics", "opencascade cad", "ruckig trajectory" etc from within the kernel space.
+Hal-core request's this high end c++ code libraries at a superfast speed and is able to make all calculations within a 1ms thread. This is 
+fast enough for realtime motion.
+
+Announcement:
+In coming time i will code a hal-core s-curve motion planner based on the Ruckig c++ library. 
+The motion planner basics are ready, i only need to code a path optimizer to get a optimal gforce path result by a sampling strategy.
+
+So far so good, and thank you for the likes !
+
+/end Edit.
+
+
 https://user-images.githubusercontent.com/44880102/122046313-c0f0af00-cdac-11eb-92a3-1def8517ed62.mp4
 
 Download the latest source code => ZIPFILE
